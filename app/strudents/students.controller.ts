@@ -19,7 +19,7 @@ export class StudentsController {
         if(!student) {
             throw new NotFoundException(`Student with ID ${id} not found`);
         }
-        console.log(student);
+
         return student;
     }
 
@@ -31,7 +31,6 @@ export class StudentsController {
 
     @Put(':id')
     update(@Param('id') id: string,@Body() body: IStudent): string {
-        console.log(id,body);
         return `This will update student with ID ${id} with the following data: ${JSON.stringify(body)}`;
     }
 
