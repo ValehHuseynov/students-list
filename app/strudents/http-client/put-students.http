@@ -1,0 +1,9 @@
+### Send PUT request with json body
+PUT http://localhost:4000/students/5
+Content-Type: application/json
+
+{
+  "id": 5,
+  "name": "Example name 1",
+  "age": 66
+}
